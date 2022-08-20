@@ -1,0 +1,733 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: #fff;
+}
+
+.navbar--color-background {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+.navbar--color-background path {
+  fill: #1d3557;
+  transition: fill 300ms ease-in-out;
+}
+
+.nav-center {
+  width: 100vw;
+  position: fixed;
+  z-index: 2;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-toggle {
+  color: #fff;
+  font-size: 1.8em;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  margin: 0;
+  z-index: 10;
+}
+
+.links {
+  position: fixed;
+  top: -110%;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+
+  transition: all 0.3s linear;
+  list-style-type: none;
+}
+
+.show-links {
+  top: 0;
+  bottom: 0;
+}
+
+li {
+  padding: 1.3em;
+}
+
+a {
+  color: #fff;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.links a {
+  font-size: 1em;
+  font-weight: 300;
+  transition: all 0.5s ease-in-out;
+}
+
+.links a:hover {
+  font-size: 1.2em;
+}
+
+.phone-num {
+  display: grid;
+  align-items: center;
+  visibility: hidden;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  background-image: url(https://webventure.ca/wp-content/uploads/2020/10/UntitledDesign_1895409101-1.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+#main-section {
+  background-image: url(https://webventure.ca/wp-content/uploads/2020/10/Sans-titre-2020-10-02T150528.920.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content {
+  padding: 30px;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 45px;
+  margin: 0.5em 0;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+button {
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 2em 0;
+  padding: 15px 35px;
+  color: white;
+  background-color: #0097d3;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.quisommesnous {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 20px 20px 100px 20px;
+  background-image: url(https://webventure.ca/wp-content/uploads/2020/10/UntitledDesign_1895409101-2.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.quisommesnous img {
+  width: 80%;
+  position: relative;
+  top: -50px;
+}
+
+.quisommesnous h2 {
+  color: #1d3557;
+  font-size: 27px;
+  font-weight: 300;
+}
+
+.quisommesnous p {
+  color: #1d3557cc;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+.shape-divider {
+  position: absolute;
+  clip-path: polygon(100% 68%, 0% 100%, 100% 100%);
+  background-color: rgba(29, 54, 88, 0.03);
+  width: 100%;
+  height: 400px;
+  bottom: 0px;
+  right: 0px;
+}
+
+.services-ctn {
+  background-color: rgba(29, 54, 88, 0.03);
+  padding: 20px 20px 100px 20px;
+}
+
+.services-ctn h2 {
+  color: #1d3557;
+  font-weight: 400;
+  font-size: 60px;
+  text-align: center;
+
+  padding: 20px;
+}
+
+.services-ctn h5 {
+  color: #1d3557;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.services-ctn p {
+  color: #1d3557cc;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.service {
+  padding: 50px;
+  text-align: center;
+  border-top: solid;
+  border-width: 1px 0px 0px 0px;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.testimonitals-ctn {
+  background-image: url(https://webventure.ca/wp-content/uploads/2020/10/Sans-titre-2020-10-02T144344.878.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonitals {
+  background-image: url(https://webventure.ca/wp-content/uploads/2020/10/UntitledDesign_469601929-2.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.pourquoi {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pourquoi h2 {
+  font-weight: 300;
+  font-size: 39px;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.pourquoi p {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+.clients {
+  padding: 40px 20px;
+}
+
+.clients h2 {
+  font-weight: 300;
+  font-size: 39px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.client {
+  padding: 30px 0;
+  border-top: solid;
+  border-width: 1px 0px 0px 0px;
+}
+
+.client p {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.text::before {
+  content: "\2B50\2B50\2B50\2B50\2B50";
+  display: block;
+  padding-bottom: 10px;
+}
+
+.personne {
+  display: flex;
+  padding: 40px 0;
+}
+
+.personne img {
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+.job {
+  font-size: 14px;
+}
+
+.realisations {
+  color: #1d3557;
+  padding: 40px;
+  text-align: center;
+  background-image: url(https://webventure.ca/wp-content/uploads/2020/10/UntitledDesign_469601929-1.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.realisations h2 {
+  font-size: 41px;
+  font-weight: 300;
+  padding: 30px;
+}
+
+.realisations h4 {
+  font-size: 23px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.realisations h6 {
+  font-size: 13px;
+  font-weight: 400;
+  padding-top: 30px;
+  text-transform: uppercase;
+}
+
+.realisations p {
+  color: #1d3557cc;
+  font-size: 16px;
+  padding-bottom: 50px;
+}
+
+.chiffres {
+  color: #1d3557;
+  position: relative;
+  padding: 30px 0px 100px 0px;
+  text-align: center;
+}
+
+.chiffres-ctn {
+  padding: 0 50px;
+  border-top: solid;
+  border-color: #333;
+  border-width: 1px;
+}
+
+.chiffres h2 {
+  font-weight: 400;
+  font-size: 34px;
+  padding: 30px;
+}
+
+.chfr-center {
+  border: solid;
+  border-width: 1px 0px 1px 0px;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.chiffres h5 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.chiffre {
+  padding: 20px;
+}
+
+.nombre {
+  color: #0097d3;
+  font-weight: 600;
+  font-size: 50px;
+  padding: 10px;
+}
+
+.soumission {
+  color: #1d3557;
+  background-color: rgba(29, 54, 88, 0.03);
+  padding: 30px 30px 70px 30px;
+  background-image: url(https://webventure.ca/wp-content/uploads/2020/08/UntitledDesign_169836454-1.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.soumission-text {
+  padding: 30px 0 0 0;
+}
+
+.soumission h3 {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 30px;
+  border: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.soumission p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #1d3557cc;
+  padding-top: 10px;
+  width: 90%;
+}
+
+.input {
+  margin-top: 30px;
+}
+
+.input label {
+  color: #1d3557cc;
+  font-weight: 400;
+  font-size: 16px;
+  display: block;
+}
+
+.input input {
+  width: 90vw;
+  height: 40px;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+footer {
+  background-image: url(https://webventure.ca/wp-content/uploads/2020/08/Sans-titre-2020-10-02T145227.763.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-ctn {
+  padding: 30px;
+  background-image: url(https://webventure.ca/wp-content/uploads/2020/08/UntitledDesign_169836454-2.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+footer h5 {
+  font-weight: 400;
+  font-size: 16px;
+  padding: 30px 0;
+}
+
+footer h6 {
+  font-weight: 400;
+  font-size: 13px;
+  padding: 30px 0 10px 0;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.contacts h5 {
+  border: solid;
+  border-width: 0px 0px 1px 0px;
+}
+
+.copyright {
+  padding-top: 40px;
+}
+
+.copyright p {
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 1105px) {
+  main,
+  .quisommesnous,
+  .testimonitals,
+  .realisations,
+  .soumission,
+  .footer-ctn {
+    background-size: contain;
+  }
+
+  .desktop-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 1105px) {
+  button:hover {
+    background-color: #000;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .logo {
+    padding: 20px 50px 20px 20px;
+  }
+
+  .nav-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .phone-num {
+    display: flex;
+    visibility: visible;
+    margin-right: 20px;
+  }
+
+  .phone-num::before {
+    content: "";
+    min-width: 1px;
+    min-height: 25px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-right: 20px;
+  }
+
+  .links {
+    opacity: 1;
+    position: relative;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    z-index: 0;
+  }
+
+  #main-section {
+    background-attachment: fixed;
+  }
+
+  .main-content {
+    margin-left: 12em;
+    width: 40em;
+  }
+
+  main h1 {
+    font-size: 70px;
+  }
+
+  .quisommesnous {
+    flex-direction: row;
+  }
+
+  .text-section {
+    padding-left: 100px;
+    width: 50%;
+    text-align: left;
+  }
+
+  .quisommesnous {
+    padding: 20px 20px 0 20px;
+  }
+
+  .quisommesnous h2 {
+    font-size: 60px;
+  }
+
+  .quisommesnous p {
+    font-size: 17px;
+  }
+
+  .quisommesnous img {
+    width: 435px;
+  }
+
+  .img-section {
+    width: 50%;
+  }
+
+  .services {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+  }
+
+  .top {
+    border-top: none;
+  }
+
+  .center {
+    border-left: solid;
+    border-right: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.12);
+  }
+
+  .testimonitals-ctn {
+    background-attachment: fixed;
+  }
+
+  .pourquoi h2 {
+    font-size: 50px;
+  }
+
+  .pourquoi p {
+    width: 60%;
+    font-size: 17px;
+  }
+
+  .pourquoi img {
+    width: 1024px;
+  }
+
+  .clients-ctn {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .clients {
+    width: 45%;
+    margin-right: 300px;
+  }
+
+  .clients h2 {
+    font-size: 60px;
+    text-align: left;
+  }
+
+  .realisations {
+    display: flex;
+    justify-content: center;
+  }
+
+  .realisations-ctn {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+  }
+
+  .realisation {
+    text-align: left;
+  }
+
+  .realisation p {
+    width: 330px;
+  }
+
+  .realisations img {
+    width: 350px;
+  }
+
+  .lensventure {
+    border-right: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.12);
+  }
+
+  .aliments {
+    padding: 0 30px;
+  }
+
+  .mobile-btn {
+    display: none;
+  }
+
+  .chiffres {
+    display: flex;
+    justify-content: center;
+  }
+
+  .chiffres-ctn {
+    display: flex;
+    align-items: center;
+    width: 70%;
+  }
+
+  .chiffres h2 {
+    width: 33%;
+    font-size: 45px;
+    text-align: end;
+    border: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: rgba(0, 0, 0, 0.12);
+  }
+
+  .chiffres h5 {
+    font-size: 18px;
+  }
+
+  .nombre {
+    font-size: 69px;
+  }
+
+  .chfr-center {
+    border: none;
+  }
+
+  .soumission {
+    display: flex;
+  }
+
+  .soumission-text,
+  form {
+    width: 50%;
+  }
+
+  .input input {
+    width: 100%;
+  }
+
+  .footer-ctn {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  footer img {
+    width: 325px;
+  }
+
+  .contacts,
+  .left-section {
+    width: 50%;
+  }
+
+  .left-section {
+    border-right: solid;
+    border-width: 1px;
+    text-align: center;
+  }
+
+  .contacts h5,
+  .contacts h6,
+  .contacts p {
+    padding-left: 20px;
+  }
+
+  footer {
+    background-attachment: fixed;
+  }
+}
