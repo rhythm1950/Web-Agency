@@ -21,5 +21,5 @@ This is a website of a Web Agency. I have developed it using HTML, CSS, JavaScri
 
 
 ### Website Preview:
-<img src="./assets/img/Techo-Agency.png" alt="Techo Agency">
+<img src="./images/Web-Agency.png" alt="Web Agency">
 
